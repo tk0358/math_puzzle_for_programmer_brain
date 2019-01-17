@@ -1,3 +1,6 @@
+#正解ではあるが、解答例参照
+#reverseを使うともっと簡単に
+
 def judge_palindrome(str)
   0.upto(str.size / 2 - 1) do |i|
     if str[i] != str[-i-1]
@@ -6,6 +9,11 @@ def judge_palindrome(str)
   end
   true
 end
+
+#reverseを使ったjudge_palindrome
+# def judge_palindrome(str)
+#   str == str.reverse
+# end
 
 def find_min_pali_more_than_10
   (10..1000).each do |n|
